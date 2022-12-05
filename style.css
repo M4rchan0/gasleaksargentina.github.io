@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*,* ::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    position: relative;
+    padding-bottom: 5em;
+    min-height: 100vh;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-size: 13px;
+    
+}
+
+header{
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 85px;
+    padding: 10px 10%;
+    z-index: 2000;
+    width: 100%;
+}
+
+header .nav{
+    /*display: flex;*/
+    position: fixed;
+    flex-direction: column;
+    text-align: right;
+    font-size: 13px;
+    padding-bottom: 15px;
+    box-shadow: -20px 20px 50px white;
+    
+    
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    width:max-content ;
+    padding: 0;
+}
+
+nav a:hover {
+    color:#afafaf;
+}
+
+li{
+    float: right;
+    
+}
+
+ul{
+    justify-content: center;
+    list-style-type: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo img{
+    height: 70px;
+    margin-right: 10px;
+    flex-direction: row;
+}
+
+.boton-nav{
+color:white;
+background: none;
+border:none;
+font-size: 20px;
+padding: 0 20px;
+line-height: 60px;
+
+display:none;
+
+}
+
+.contenedor{
+
+    height: 50vh;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+}
+
+
+#Somos{
+    padding-top: 10%;
+    padding-bottom: 0;
+      
+}
+
+.cont1{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo21 {
+    padding-top:20px;
+}
+
+
+
+
+h2 {
+    text-align: center;
+    font-style: inherit;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo1{
+    padding-top: 125px;
+}
+
+.titulosomos{
+    padding-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-style: normal;
+}
+
+
+
+.cont1 {
+    display: flex;
+    flex-basis: calc(50% - 1rem);
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+p{
+    flex-direction: row;
+    text-transform: none;
+}
+
+.parrafo {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+        
+}
+
+.parrafo2 {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.video{
+    
+    width:50%;
+    position: relative;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 310px;
+    padding-left: 100px;
+    margin-left: 60px;
+    z-index: 1000;
+
+} 
+
+.video::after{
+    content:"";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video_gasleaks{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    align-items: center;
+   
+}
+
+
+#productos{
+    padding:15px;
+    background-color: #FAFDFF;
+    position: relative;
+}
+
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+   footer{
+    background-color: black;
+    position: absolute;
+    display: flex;
+   
+    width: 100%;
+    padding: 1em;
+    justify-content: space-between;
+   }
+
+   /* ORDENAR EL FOOTER, HACERLOS LOS LINKS A OMNI, ACHICAR IMAGEN DE "FIND GAS LEAKS FAST"*/
+
+   footer .protect{
+
+    margin-left: 200px;
+    align-items: center;
+    margin-top: 70px;
+
+   } 
+
+   footer .halma{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 200px;
+    
+}
+
+footer p{
+    color:rgba(134, 128, 128, 0.863);
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+footer p:hover{
+    color:#afafaf;
+}
+
+footer .omni:hover{
+    color:white;
+}
+
+ 
+
+@media all and (max-width:480px){
+    header{
+        flex-direction: row;
+        width: 100%;
+        position: fixed;
+        z-index: 2000;
+    }
+
+    nav{
+        padding: 10px 0px;
+        
+    }
+    .nav-links{
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+        left:0;
+        top:80px;
+        width:100%;
+        padding: 0;
+
+        left:0%;
+        transition: left 0.3s;
+    }
+
+    nav li{
+        font-size: 20px;
+        
+    }
+
+    nav li a{
+        font-size: 20px;
+        margin:10px;
+        padding: 10px;
+        line-height: 40px;
+    }
+
+    .boton-nav{
+                    
+        display:block;
+        left:80px;
+    }
+
+    .nav-menu_visible{
+        left:100%;
+    }
+
+    .hero{
+        display: flex;
+        padding-top: 90px;
+    }
+
+    
+
+    .Somos{
+        position: fixed;
+    flex-direction: column;
+    }
+
+    #Somos{
+        padding-bottom: 200px;
+        margin-bottom: 100px;
+    }
+
+    /*.Somos .contenedor .video{
+        width: 50%;
+    }*/
+
+    .contenedor{
+        height: 25vh;
+        margin-bottom: 62.5px;
+        text-transform: none;
+
+
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        align-items: center;
+    }
+
+    .productos{
+        padding: 0;
+        background-color: #FAFDFF;
+        position: relative;
+    }
+
+    .titulo1 .titulo2{
+        position: fixed;
+       
+    }
+
+    .contenedor2{
+        height: 50%;
+        margin-bottom: 20%;
+        text-transform: none;
+
+
+        padding: 5px;
+        align-items: auto;
+    
+    }
+
+    .cont1{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    
+    .titulo1{
+        padding-top: 63px;
+    }
+
+    .titulo21{
+        padding-top: 80px;
+    }
+
+    .titulo2{
+        padding-top: 60px;
+    }
+
+    .parrafo{
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        margin: 5px;
+        font-size: 15px;
+    }
+    .parrafo2{
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        margin: 5px;
+        font-size:15px;
+    }
+
+    /*.video{
+        flex-basis: calc(200% - 1rem);
+        padding: 0;
+        margin: 0;
+        left:0;
+        
+
+    }*/
+
+    /*.video{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        display: flexbox;
+        
+    
+    }*/
+
+    .video{
+    width:100%;
+    position: relative;
+    margin: 0 ;
+    margin-left: 0;
+    margin-right: 0;
+    height: 310px;
+    padding-left: 0px;
+    margin-left: 0px;
+    z-index: 1000;
+
+    }
+
+  
+    h3 h2{
+        max-width: 50%;
+    }
+
+
+    
+    p{
+        flex-direction: column;
+        text-transform: none;
+    }
+    
+    footer{
+        background-color: black;
+        position:absolute;
+        display: flex;
+       flex-direction: column;
+        width: 100%;
+        padding: 1em;
+        
+       }
+    
+       footer .protect{
+        margin: 0;
+       }
+
+       footer .protect img{
+        width: 100%;
+       }
+
+       footer .halma{
+        align-items: center;
+        margin-right: 0;
+       }
+
+       footer .omni{
+        width:80%;
+        
+       }
+
+
+}
+
+/*@media screen and (max-width: 766.98px) {
+   .html5-video-container{ 
+  flex-basis: calc(100% - 1rem);
+   }
+}*/
+
+/*hay que seguir ordenando la seccion de productos y tratar de hacerla responsive.
+el video tiene que quedar mas chico y que no ocupe tanto espacio como en la pagina original*/
+
